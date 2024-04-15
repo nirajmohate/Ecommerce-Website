@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSpectra Ecommerce </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="nav">
+            <h2>ShopSpectra</h2>
+                <input type="text" id="searchInput" class="liItem" placeholder="Search products..." oninput="searchProducts()">
+                <a src="#" id="home"      onclick="window.location.href='home.html'"  class="liItem"> <i  class="fa-solid fa-house"></i></a>
+                <a src="#" id="favorites" onclick="favorites()"  class="liItem" > <i class="fa-regular fa-heart"></i></a>
+                <a src="#" id="cart"      class="liItem" class="cart" onclick="toggleCartModal()"> <span id="cartCount">0</span> <i  class="fa-solid fa-cart-shopping"></i></a>
+                <a src="#" id="loginButton"   onclick="login()"  class="liItem">Log in</a>
+                <a src="#" id="bars"    onclick="opennav()"  class="liItem"> <i class="fa-solid fa-bars"></i></a>
+
+           
+        </div>
+        <div id="sidenav">
+            <button id="closebtn" onclick="closenav()">**</button> <br> <br>
+            <a src="#" class="lItem"  onclick="window.location.href='home.html'">Home</a> <br> <br>
+            <a src="#" class="lItem"  onclick="window.location.href='about.html'">About us</a> <br> <br>
+            <a src="#" class="lItem"  onclick="window.location.href='contact.html'">Contact</a> <br> <br>
+            <a src="#" class="lItem" id="Login" onclick="Login()">Log in</a> <br> <br>
+        </div>
+        <!-- <button id="loginButton">Login</button> -->
+        
+        <div id="loginForm" style="display:none;">
+            <form id="form">
+                <div class="log">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="log">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Log In</button>
+            </form>
+        </div>
+    </div>
+    <div id="main">
+
+<h2 class="title">Products</h2>
+<div id="products"></div>
+<div id="cartModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="toggleCartModal()">&times;</span>
+        <h2>Cart</h2>
+        <div id="cartItems"></div>
+    </div>
+</div>
+    </div>
+    <div id="footer">
+        <div id="foot">
+            <p class="para" id="p1"><span class="span">Get to know us</span> <br>
+         About us <br>
+         Careers <br>
+         Press Releases <br>
+         ShopSpectra Sceince      </p>
+
+         <p class="para" id="p2"><span class="span">Connect with us</span> <br>
+            <a href="##" class="socialmedia">Facebook</a>  <br>
+            <a href="##" class="socialmedia">Twitter</a>  <br>
+            <a href="##" class="socialmedia">Instagram</a>  <br>
+            <a href="##" class="socialmedia">Thread</a> <br>
+                  </p>
+
+             <p class="para" id="p3"><span class="span">Lets us help you</span> <br>
+                 your account <br>
+                 Returns Centre <br>
+                 Contact <br>
+                 Help      </p>
+               
+         </div> <hr>
+         <div id="foot2">
+        
+         <h2>ShopSpectra</h2></div>
+    </div>
+</body>
+</html>

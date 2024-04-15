@@ -1,0 +1,70 @@
+/* Default styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+footer {
+    font-size: 0.8em;
+}
+
+/* Responsive layout */
+
+@media screen and (max-width: 768px) {
+    /* Adjust header and footer */
+    header, footer {
+        padding: 10px;
+    }
+
+    /* Adjust navigation links */
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Adjust main content */
+    main {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjust header and footer */
+    header, footer {
+        padding: 5px;
+    }
+
+    /* Adjust navigation links */
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    /* Adjust main content */
+    main {
+        padding: 5px;
+    }
+}
+

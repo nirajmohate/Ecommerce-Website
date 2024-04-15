@@ -1,0 +1,220 @@
+  *{
+    margin:0px;
+    padding:0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#nav{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:  center;
+    background-color: rgb(46, 52, 71);
+    color:white;
+    padding:10px;
+  
+}
+.liItem{
+    cursor: pointer;
+}
+
+.lItem{
+    cursor: pointer;
+    color: aliceblue;
+ 
+}
+#sidenav{
+    
+    height:100%;
+    width:0;
+    position:fixed;
+    z-index:1;
+    top:0px;
+    left:0px;
+    background-color:#111;
+    overflow-x: hidden;
+    transition:0.5s;
+    padding-top:50px;
+}
+#sidenav #lList{
+    color:818181;
+    display:none;
+    transition:0.3s;
+}
+#foot{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:  center;
+    background-color: rgb(46, 52, 71);
+    color:white;
+    padding:10px;
+    margin-top:100%;
+    padding-top:30px;
+    padding-bottom:20px;
+  
+}
+
+.span{
+   font-weight: 700;
+   padding-bottom:18px;
+  
+}
+.title{
+    text-align:center;
+    padding:15px;
+}
+#foot2{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:  center;
+    background-color: rgb(46, 52, 71);
+    color:white;
+    padding:20px;
+   
+  
+}
+
+#closebtn{
+    text-decoration: none;
+    border: none;
+    background-color:black;
+    width:30px;
+    height:20px;
+    color:white;
+}
+ login Form 
+#loginForm {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+.log input[type="text"],
+.log input[type="password"] {
+    width:250px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004494;
+}
+
+label {
+    display: block;
+}
+
+
+body { 
+    font-family: Arial, 
+    sans-serif; 
+}
+header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+     padding: 10px; 
+    }
+#products {
+     display: flex;
+      flex-wrap: wrap;
+       padding: 10px; }
+.product { 
+    border: 1px solid #ddd;
+     padding: 10px;
+      margin: 10px;
+       width: calc(25% - 22px); 
+    }
+img {
+     max-width: 100%;
+      height: auto;
+     }
+.cart {
+     position: fixed;
+      top: 10px; 
+      right: 10px;
+       cursor: pointer;
+     }
+.modal { display: none;
+     position: fixed; 
+     left: 0;
+      top: 0;
+      width: 100%;
+       height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+     }
+.modal-content {
+     background: white;
+     padding: 20px; 
+     width: 50%; 
+     margin: 50px auto;
+      position: relative; 
+    }
+.close {
+     position: absolute;
+      top: 10px; 
+      right: 10px; 
+      cursor: pointer;
+     }
+
+     a{
+         color:white;
+         text-decoration: none;
+     }  
+     
+    
+    
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        #nav, #foot, #foot2 {
+            flex-direction: column;
+        }
+    
+        #sidenav {
+            width: 250px; /* Sidenav becomes visible with a fixed width on small screens */
+        }
+    
+        #sidenav #lList {
+            display: block; /* Show list items in sidenav */
+        }
+    
+        .product {
+            width: calc(50% - 22px); /* Adjust product grid for smaller screens */
+        }
+    
+        .modal-content {
+            width: 90%; /* Modal takes more screen on smaller devices */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .product {
+            width: calc(100% - 22px); /* Full width products on very small screens */
+        }
+    
+        form div, .log input[type="text"], .log input[type="password"], button {
+            width: 100%; /* Full width form elements for smaller devices */
+        }
+    }
+    
